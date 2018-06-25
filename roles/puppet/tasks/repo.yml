@@ -1,0 +1,10 @@
+- name: Download repo puppet
+  get_url:
+   url: https://apt.puppetlabs.com/puppet5-release-xenial.deb
+   dest: /tmp/puppet.deb
+  when: ansible_hostname == "devops"
+
+- name: Instalar repositorio
+  apt:
+   deb: /tmp/puppet.deb
+  when: ansible_hostname == "devops"

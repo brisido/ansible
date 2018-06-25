@@ -1,0 +1,9 @@
+---
+# tasks file for web
+
+- name: Install webserver
+  hosts: all
+  tasks:
+   - include: deb.yml
+   - include: centos.yml
+   - include: file.yml

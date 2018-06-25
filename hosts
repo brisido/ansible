@@ -1,0 +1,10 @@
+[devops]
+# 192.168.200.10
+# 192.168.200.1..100
+devops.dexter.com.br
+
+[automation]
+automation.dexter.com.br
+
+[docker]
+docker.dexter.com.br
