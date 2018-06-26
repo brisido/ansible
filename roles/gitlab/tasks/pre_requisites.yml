@@ -1,0 +1,11 @@
+- name: Instalando dependencias
+  apt:
+   name: "{{ item }}"
+   state: present
+   update_cache: yes
+  with_items:
+   - curl
+   - openssh-server
+   - ca-certificates
+   - postfix
+  when: ansible_os_family == "Debian"
